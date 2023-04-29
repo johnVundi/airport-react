@@ -2,6 +2,7 @@ import React from "react";
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../context/Authcontext";
+
 //import Review from '../../pages/Review'
 import Swal from "sweetalert2";
 
@@ -47,7 +48,7 @@ const Navbar = () => {
             </>
           ) : (
             <>
-              <Link to="/signup">Sign up</Link>
+              <Link to="/signUp">Sign up</Link>
               <Link to="/login">Log in</Link>
             </>
           )}
