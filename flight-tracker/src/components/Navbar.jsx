@@ -28,12 +28,9 @@ const Navbar = () => {
         {/* {log} */}
         <div className=" flex flex-col">
           <p className="font-bold text-2xl text-white">
-            SAFARI<span className=" text-[#E99B04] ">FLIGHTS</span>
+            FLIGHT<span className=" text-[#E99B04] ">TRACKER</span>
           </p>
-          <p className="text-white text-sm font-thin">
-            {" "}
-            Customer Satisfaction Is Our Goal
-          </p>
+          <p className="text-white text-sm font-thin"> flight statistics</p>
         </div>
         {/* {navigation Links} */}
         <div className=" text-white font-semibold flex flex-wrap justify-between gap-6 mr-5">
@@ -42,8 +39,6 @@ const Navbar = () => {
           <Link to="/flight"> Flights</Link>
           {user ? (
             <>
-              <Link to="/bookings">Bookings</Link>
-
               <Link onClick={handleOnclick}> Logout</Link>
             </>
           ) : (
